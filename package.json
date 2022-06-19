@@ -1,0 +1,31 @@
+{
+  "name": "photo-data-sync",
+  "version": "1.0.0",
+  "description": "A utility to sync photos from the cloud to a shared disk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silver-mx/photo-data-sync.git"
+  },
+  "author": "diego.nunez.mx@gmail.com",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/silver-mx/photo-data-sync/issues"
+  },
+  "homepage": "https://github.com/silver-mx/photo-data-sync#readme",
+  "dependencies": {
+    "samba-client": "^5.0.2"
+  },
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.2",
+    "prettier": "2.7.1"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
